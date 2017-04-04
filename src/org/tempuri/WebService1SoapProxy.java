@@ -188,10 +188,10 @@ public class WebService1SoapProxy implements org.tempuri.WebService1Soap {
     return webService1Soap.getTable();
   }
   
-  public java.lang.String[][] javaobjects() throws java.rmi.RemoteException{
+  public java.lang.String[][] javaUppgiftWebservice(org.tempuri.JavaUppgiftWebserviceDt dt) throws java.rmi.RemoteException{
     if (webService1Soap == null)
       _initWebService1SoapProxy();
-    return webService1Soap.javaobjects();
+    return webService1Soap.javaUppgiftWebservice(dt);
   }
   
   

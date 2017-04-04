@@ -309,10 +309,13 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
         _operations[23] = oper;
 
         oper = new org.apache.axis.description.OperationDesc();
-        oper.setName("javaobjects");
+        oper.setName("JavaUppgiftWebservice");
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("http://tempuri.org/", "dt"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://tempuri.org/", ">>JavaUppgiftWebservice>dt"), org.tempuri.JavaUppgiftWebserviceDt.class, false, false);
+        param.setOmittable(true);
+        oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfArrayOfString"));
         oper.setReturnClass(java.lang.String[][].class);
-        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "javaobjectsResult"));
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "JavaUppgiftWebserviceResult"));
         param = oper.getReturnParamDesc();
         param.setItemQName(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
@@ -416,6 +419,13 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
             qName = new javax.xml.namespace.QName("http://tempuri.org/", ">>GetResponse>GetResult");
             cachedSerQNames.add(qName);
             cls = org.tempuri.GetResponseGetResult.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">>JavaUppgiftWebservice>dt");
+            cachedSerQNames.add(qName);
+            cls = org.tempuri.JavaUppgiftWebserviceDt.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -658,23 +668,23 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">javaobjects");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.Javaobjects.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
-            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">javaobjectsResponse");
-            cachedSerQNames.add(qName);
-            cls = org.tempuri.JavaobjectsResponse.class;
-            cachedSerClasses.add(cls);
-            cachedSerFactories.add(beansf);
-            cachedDeserFactories.add(beandf);
-
             qName = new javax.xml.namespace.QName("http://tempuri.org/", ">javaResponse");
             cachedSerQNames.add(qName);
             cls = org.tempuri.JavaResponse.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">JavaUppgiftWebservice");
+            cachedSerQNames.add(qName);
+            cls = org.tempuri.JavaUppgiftWebservice.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://tempuri.org/", ">JavaUppgiftWebserviceResponse");
+            cachedSerQNames.add(qName);
+            cls = org.tempuri.JavaUppgiftWebserviceResponse.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -1658,23 +1668,23 @@ public class WebService1SoapStub extends org.apache.axis.client.Stub implements 
 }
     }
 
-    public java.lang.String[][] javaobjects() throws java.rmi.RemoteException {
+    public java.lang.String[][] javaUppgiftWebservice(org.tempuri.JavaUppgiftWebserviceDt dt) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
         org.apache.axis.client.Call _call = createCall();
         _call.setOperation(_operations[24]);
         _call.setUseSOAPAction(true);
-        _call.setSOAPActionURI("http://tempuri.org/javaobjects");
+        _call.setSOAPActionURI("http://tempuri.org/JavaUppgiftWebservice");
         _call.setEncodingStyle(null);
         _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
         _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
         _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
-        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "javaobjects"));
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "JavaUppgiftWebservice"));
 
         setRequestHeaders(_call);
         setAttachments(_call);
- try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {dt});
 
         if (_resp instanceof java.rmi.RemoteException) {
             throw (java.rmi.RemoteException)_resp;

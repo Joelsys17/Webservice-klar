@@ -106,9 +106,9 @@ private JTable table;
 		selectButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					int col = obj.javaobjects().length;
+					int col = obj.javaUppgiftWebservice("2").length;
 					String[] row = new String[col];
-					DefaultTableModel model = new DefaultTableModel(obj.javaobjects(), row);
+					DefaultTableModel model = new DefaultTableModel(obj.javaUppgiftWebservice("2"), row);
 					table.setModel(model);
 				} catch (RemoteException e1) {
 					// TODO Auto-generated catch block

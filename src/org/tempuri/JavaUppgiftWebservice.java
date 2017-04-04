@@ -1,5 +1,5 @@
 /**
- * Javaobjects.java
+ * JavaUppgiftWebservice.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,14 +7,41 @@
 
 package org.tempuri;
 
-public class Javaobjects  implements java.io.Serializable {
-    public Javaobjects() {
+public class JavaUppgiftWebservice  implements java.io.Serializable {
+    private org.tempuri.JavaUppgiftWebserviceDt dt;
+
+    public JavaUppgiftWebservice() {
+    }
+
+    public JavaUppgiftWebservice(
+           org.tempuri.JavaUppgiftWebserviceDt dt) {
+           this.dt = dt;
+    }
+
+
+    /**
+     * Gets the dt value for this JavaUppgiftWebservice.
+     * 
+     * @return dt
+     */
+    public org.tempuri.JavaUppgiftWebserviceDt getDt() {
+        return dt;
+    }
+
+
+    /**
+     * Sets the dt value for this JavaUppgiftWebservice.
+     * 
+     * @param dt
+     */
+    public void setDt(org.tempuri.JavaUppgiftWebserviceDt dt) {
+        this.dt = dt;
     }
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof Javaobjects)) return false;
-        Javaobjects other = (Javaobjects) obj;
+        if (!(obj instanceof JavaUppgiftWebservice)) return false;
+        JavaUppgiftWebservice other = (JavaUppgiftWebservice) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -22,7 +49,10 @@ public class Javaobjects  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true;
+        _equals = true && 
+            ((this.dt==null && other.getDt()==null) || 
+             (this.dt!=null &&
+              this.dt.equals(other.getDt())));
         __equalsCalc = null;
         return _equals;
     }
@@ -34,16 +64,26 @@ public class Javaobjects  implements java.io.Serializable {
         }
         __hashCodeCalc = true;
         int _hashCode = 1;
+        if (getDt() != null) {
+            _hashCode += getDt().hashCode();
+        }
         __hashCodeCalc = false;
         return _hashCode;
     }
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(Javaobjects.class, true);
+        new org.apache.axis.description.TypeDesc(JavaUppgiftWebservice.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">javaobjects"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">JavaUppgiftWebservice"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("dt");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "dt"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">>JavaUppgiftWebservice>dt"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
     }
 
     /**

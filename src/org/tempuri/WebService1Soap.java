@@ -32,5 +32,5 @@ public interface WebService1Soap extends java.rmi.Remote {
     public void upload(byte[] contents, java.lang.String filenamesave) throws java.rmi.RemoteException;
     public java.lang.String txtFile(java.lang.String filename) throws java.rmi.RemoteException;
     public java.lang.Object[] getTable() throws java.rmi.RemoteException;
-    public java.lang.String[][] javaobjects() throws java.rmi.RemoteException;
+    public java.lang.String[][] javaUppgiftWebservice(org.tempuri.JavaUppgiftWebserviceDt dt) throws java.rmi.RemoteException;
 }

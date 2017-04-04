@@ -1,5 +1,5 @@
 /**
- * JavaobjectsResponse.java
+ * JavaUppgiftWebserviceResponse.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,41 +7,41 @@
 
 package org.tempuri;
 
-public class JavaobjectsResponse  implements java.io.Serializable {
-    private java.lang.String[][] javaobjectsResult;
+public class JavaUppgiftWebserviceResponse  implements java.io.Serializable {
+    private java.lang.String[][] javaUppgiftWebserviceResult;
 
-    public JavaobjectsResponse() {
+    public JavaUppgiftWebserviceResponse() {
     }
 
-    public JavaobjectsResponse(
-           java.lang.String[][] javaobjectsResult) {
-           this.javaobjectsResult = javaobjectsResult;
-    }
-
-
-    /**
-     * Gets the javaobjectsResult value for this JavaobjectsResponse.
-     * 
-     * @return javaobjectsResult
-     */
-    public java.lang.String[][] getJavaobjectsResult() {
-        return javaobjectsResult;
+    public JavaUppgiftWebserviceResponse(
+           java.lang.String[][] javaUppgiftWebserviceResult) {
+           this.javaUppgiftWebserviceResult = javaUppgiftWebserviceResult;
     }
 
 
     /**
-     * Sets the javaobjectsResult value for this JavaobjectsResponse.
+     * Gets the javaUppgiftWebserviceResult value for this JavaUppgiftWebserviceResponse.
      * 
-     * @param javaobjectsResult
+     * @return javaUppgiftWebserviceResult
      */
-    public void setJavaobjectsResult(java.lang.String[][] javaobjectsResult) {
-        this.javaobjectsResult = javaobjectsResult;
+    public java.lang.String[][] getJavaUppgiftWebserviceResult() {
+        return javaUppgiftWebserviceResult;
+    }
+
+
+    /**
+     * Sets the javaUppgiftWebserviceResult value for this JavaUppgiftWebserviceResponse.
+     * 
+     * @param javaUppgiftWebserviceResult
+     */
+    public void setJavaUppgiftWebserviceResult(java.lang.String[][] javaUppgiftWebserviceResult) {
+        this.javaUppgiftWebserviceResult = javaUppgiftWebserviceResult;
     }
 
     private java.lang.Object __equalsCalc = null;
     public synchronized boolean equals(java.lang.Object obj) {
-        if (!(obj instanceof JavaobjectsResponse)) return false;
-        JavaobjectsResponse other = (JavaobjectsResponse) obj;
+        if (!(obj instanceof JavaUppgiftWebserviceResponse)) return false;
+        JavaUppgiftWebserviceResponse other = (JavaUppgiftWebserviceResponse) obj;
         if (obj == null) return false;
         if (this == obj) return true;
         if (__equalsCalc != null) {
@@ -50,9 +50,9 @@ public class JavaobjectsResponse  implements java.io.Serializable {
         __equalsCalc = obj;
         boolean _equals;
         _equals = true && 
-            ((this.javaobjectsResult==null && other.getJavaobjectsResult()==null) || 
-             (this.javaobjectsResult!=null &&
-              java.util.Arrays.equals(this.javaobjectsResult, other.getJavaobjectsResult())));
+            ((this.javaUppgiftWebserviceResult==null && other.getJavaUppgiftWebserviceResult()==null) || 
+             (this.javaUppgiftWebserviceResult!=null &&
+              java.util.Arrays.equals(this.javaUppgiftWebserviceResult, other.getJavaUppgiftWebserviceResult())));
         __equalsCalc = null;
         return _equals;
     }
@@ -64,11 +64,11 @@ public class JavaobjectsResponse  implements java.io.Serializable {
         }
         __hashCodeCalc = true;
         int _hashCode = 1;
-        if (getJavaobjectsResult() != null) {
+        if (getJavaUppgiftWebserviceResult() != null) {
             for (int i=0;
-                 i<java.lang.reflect.Array.getLength(getJavaobjectsResult());
+                 i<java.lang.reflect.Array.getLength(getJavaUppgiftWebserviceResult());
                  i++) {
-                java.lang.Object obj = java.lang.reflect.Array.get(getJavaobjectsResult(), i);
+                java.lang.Object obj = java.lang.reflect.Array.get(getJavaUppgiftWebserviceResult(), i);
                 if (obj != null &&
                     !obj.getClass().isArray()) {
                     _hashCode += obj.hashCode();
@@ -81,13 +81,13 @@ public class JavaobjectsResponse  implements java.io.Serializable {
 
     // Type metadata
     private static org.apache.axis.description.TypeDesc typeDesc =
-        new org.apache.axis.description.TypeDesc(JavaobjectsResponse.class, true);
+        new org.apache.axis.description.TypeDesc(JavaUppgiftWebserviceResponse.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">javaobjectsResponse"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", ">JavaUppgiftWebserviceResponse"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("javaobjectsResult");
-        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "javaobjectsResult"));
+        elemField.setFieldName("javaUppgiftWebserviceResult");
+        elemField.setXmlName(new javax.xml.namespace.QName("http://tempuri.org/", "JavaUppgiftWebserviceResult"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://tempuri.org/", "ArrayOfString"));
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
